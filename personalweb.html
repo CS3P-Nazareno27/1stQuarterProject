@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Didot&display=swap');
+
+        header {
+            background: linear-gradient(to bottom, black, #444);
+            color: #fff;
+            text-align: center;
+            padding: 1px; 
+            font-family: 'Didot', serif;
+            font-size: 20px; 
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+            border-bottom: 2px solid black;
+            border-top: 2px solid black;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            background-color: #444;
+        }
+        .photo-grid img {
+            width: 100%;
+            height: auto;
+            display: block;
+            opacity: 0.7;
+            cursor: pointer;
+            transition: opacity 0.2s;
+            border-radius: 10px;
+        }
+        .photo-grid img:hover {
+            opacity: 1;
+            
+        }
+        .welcoming-text {
+            font-family: 'Pacifico', cursive; 
+            text-align: center;
+            font-size: 30px;
+            color: #ffffff;
+            margin: 10px 0;
+            position: absolute;
+            right: 600px;
+            top: 410px;
+            opacity: 0; 
+            animation: fadeIn 10s ease-in-out 1 forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+
+        <title>Home page</title>
+
+</head>
+<body>
+    <header>
+        <h1>PADI</h1> 
+    </header>
+    <nav>
+        <a href="personalweb.html"><b>Home</b></a>
+        <a href="aboutpage.html">About</a>
+        <a href="socialpage.html">Socials</a>
+        <a href="gallerypage.html">Gallery</a>
+        <a href="favnhobbies.html">Favorites & Hobbies</a>
+    </nav>
+    <div class="photo-grid">
+        <div class="photo1">
+            <img src="smile.jpg" style="margin-top: -5px;" alt="">
+            <img src="rob.jpg" style="margin-top: 20px; height: 320px;" alt="pic sa gwapo">
+        </div>
+        <div class="w3-third">
+            <img src="fam.jpg" style= "margin-top: -5px;" alt="Family">
+            <span class="welcoming-text">Welcome to my world!</span>
+            <img src="27.jpg" style="margin-top: 115px;" alt="Elysian">
+        </div>
+        <div class="w3-third">
+            <img src="bkb.jpg" style="margin-top: -5px;" alt="intrams ftw">
+            <img src="daboys.jpg" style="margin-top: 20px;" alt="the boyss">
+        </div>
+    </div>
+</body>
+</html>
+
+
+
